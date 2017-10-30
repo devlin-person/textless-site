@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'foundation-rails'
 gem 'devise'
+gem 'webpacker'
 
 group :development, :test do
   gem 'pry-rails'
