@@ -1,0 +1,63 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 31/10/2017 17:24
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-drink:before { content: "\f100"; }
+.flaticon-plate-fork-and-knife:before { content: "\f101"; }
+.flaticon-hot-coffee-rounded-cup-on-a-plate-from-side-view:before { content: "\f102"; }
+.flaticon-animals:before { content: "\f103"; }
+.flaticon-interface:before { content: "\f104"; }
+.flaticon-users-group:before { content: "\f105"; }
+.flaticon-nature:before { content: "\f106"; }
+.flaticon-mountain:before { content: "\f107"; }
+.flaticon-city-1:before { content: "\f108"; }
+.flaticon-city:before { content: "\f109"; }
+.flaticon-dove:before { content: "\f10a"; }
+.flaticon-black:before { content: "\f10b"; }
+
+    $font-Flaticon-drink: "\f100";
+    $font-Flaticon-plate-fork-and-knife: "\f101";
+    $font-Flaticon-hot-coffee-rounded-cup-on-a-plate-from-side-view: "\f102";
+    $font-Flaticon-animals: "\f103";
+    $font-Flaticon-interface: "\f104";
+    $font-Flaticon-users-group: "\f105";
+    $font-Flaticon-nature: "\f106";
+    $font-Flaticon-mountain: "\f107";
+    $font-Flaticon-city-1: "\f108";
+    $font-Flaticon-city: "\f109";
+    $font-Flaticon-dove: "\f10a";
+    $font-Flaticon-black: "\f10b";

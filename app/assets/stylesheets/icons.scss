@@ -1,0 +1,23 @@
+.icon-list {
+  text-align: center;
+  background: #969fad;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 5px solid #969fad;
+  padding-top: 10px
+}
+
+.icon {
+  border: 2px solid #0099ff;
+  border-radius: 50px;
+  margin: 0 20px;
+  height: 100px;
+  width: 100px;
+  background: #b3e0ff;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
