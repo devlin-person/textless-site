@@ -4,7 +4,7 @@ class SlideshowContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bird_collection: {require("../images/birds/bird1.jpeg"},
+      bird_collection: {},
       building_collection: {},
       cat_collection: {},
       dog_collection: {},
@@ -18,9 +18,8 @@ class SlideshowContainer extends React.Component {
   render() {
     return(
       <div id="container">
-        <img src={require("../images/birds/bird1.jpeg")} />
-        <img src={require("../images/cats/cat1.jpg")} />
-        {this.bird_collection}
+        {/* <img src={require("../images/birds/bird1.jpeg")} />
+        <img src={require("../images/cats/cat1.jpg")} /> */}
       </div>
     )
   }
