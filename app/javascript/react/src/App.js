@@ -3,9 +3,7 @@ import React from 'react';
 const App = props => {
   return(
     <div>
-      <h1>Textless Site</h1>
       <div className="photoScroll">
-        <h4>photos</h4>
       </div>
       <div className="icon-list">
         <i class="flaticon-black icon cat"></i>
