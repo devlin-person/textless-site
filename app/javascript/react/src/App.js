@@ -6,8 +6,6 @@ const App = props => {
     <div>
       <div className="photoScroll">
         <SlideshowContainer />
-        <img src={require("../images/birds/bird1.jpeg")} />
-        <img src={require("../images/cats/cat1.jpg")} />
       </div>
       <div className="icon-list">
         <i className="flaticon-black icon cat"></i>

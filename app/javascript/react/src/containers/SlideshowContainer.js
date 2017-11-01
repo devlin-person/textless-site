@@ -14,12 +14,10 @@ class SlideshowContainer extends React.Component {
     }
   }
 
-
   render() {
     return(
       <div id="container">
-        {/* <img src={require("../images/birds/bird1.jpeg")} />
-        <img src={require("../images/cats/cat1.jpg")} /> */}
+        
       </div>
     )
   }
