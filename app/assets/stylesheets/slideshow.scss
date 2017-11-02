@@ -2,12 +2,13 @@
   border: 1px solid grey;
   padding: 15px;
   text-align: center;
+  overflow: hidden;
 }
 
 img {
-  width: 850px;
-  overflow: hidden;
-  text-align: center;
+  width: 700px;
+  padding: 3px;
+  border: 1px solid silver;
 }
 
 .pic {
