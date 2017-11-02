@@ -16,35 +16,26 @@ class SlideshowContainer extends React.Component {
   }
 
   render() {
+    var slideshowImages = [
+      ("../images/birds/bird1.jpg"),
+      ("../images/cats/cat1.jpg"),
+      ("../images/buildings/building1.jpg"),
+      ("../images/dogs/dog1.jpg"),
+      ("../images/food/food1.jpg"),
+      ("../images/people/people1.jpg"),
+      ("../images/scenery/scenery1.jpg"),
+    ]
+    var displayedSlide = slideshowImages[Math.floor(Math.random()*slideshowImages.length)]
+    debugger;
     return(
       <div id="container">
+        {/* <PictureComponent
+          class="pic"
+          picture={require({displayedSlide})}
+        /> */}
         <PictureComponent
           class="pic"
           picture={require("../images/birds/bird1.jpg")}
-        />
-        <PictureComponent
-          class="pic"
-          picture={require("../images/cats/cat1.jpg")}
-        />
-        <PictureComponent
-          class="pic"
-          picture={require("../images/buildings/building1.jpg")}
-        />
-        <PictureComponent
-          class="pic"
-          picture={require("../images/dogs/dog1.jpg")}
-        />
-        <PictureComponent
-          class="pic"
-          picture={require("../images/food/food1.jpg")}
-        />
-        <PictureComponent
-          class="pic"
-          picture={require("../images/people/people1.jpg")}
-        />
-        <PictureComponent
-          class="pic"
-          picture={require("../images/scenery/scenery1.jpg")}
         />
       </div>
     )
