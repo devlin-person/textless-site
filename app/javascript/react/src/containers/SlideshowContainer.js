@@ -20,7 +20,7 @@ class SlideshowContainer extends React.Component {
       <div id="container">
         <PictureComponent
           class="pic"
-          picture={require("../images/birds/bird1.jpeg")}
+          picture={require("../images/birds/bird1.jpg")}
         />
         <PictureComponent
           class="pic"
@@ -28,15 +28,15 @@ class SlideshowContainer extends React.Component {
         />
         <PictureComponent
           class="pic"
-          picture={require("../images/buildings/building1.jpeg")}
+          picture={require("../images/buildings/building1.jpg")}
         />
         <PictureComponent
           class="pic"
-          picture={require("../images/dogs/dog1.jpeg")}
+          picture={require("../images/dogs/dog1.jpg")}
         />
         <PictureComponent
           class="pic"
-          picture={require("../images/food/food1.jpeg")}
+          picture={require("../images/food/food1.jpg")}
         />
         <PictureComponent
           class="pic"
@@ -44,7 +44,7 @@ class SlideshowContainer extends React.Component {
         />
         <PictureComponent
           class="pic"
-          picture={require("../images/scenery/scenery1.jpeg")}
+          picture={require("../images/scenery/scenery1.jpg")}
         />
       </div>
     )
