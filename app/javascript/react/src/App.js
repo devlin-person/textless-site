@@ -1,4 +1,5 @@
 import React from 'react';
+import { Router, browserHistory, Route, IndexRoute } from 'react-router';
 import SlideshowContainer from './containers/SlideshowContainer'
 
 const App = props => {
