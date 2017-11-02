@@ -1,4 +1,5 @@
 import React from 'react'
+import PictureComponent from "../components/PictureComponent"
 
 class SlideshowContainer extends React.Component {
   constructor(props) {
@@ -14,13 +15,37 @@ class SlideshowContainer extends React.Component {
     }
   }
 
-
   render() {
     return(
       <div id="container">
-        <img src={require("../images/birds/bird1.jpeg")} />
-        <img src={require("../images/cats/cat1.jpg")} />
-
+        <PictureComponent
+          class="pic"
+          picture={require("../images/birds/bird1.jpeg")}
+        />
+        <PictureComponent
+          class="pic"
+          picture={require("../images/cats/cat1.jpg")}
+        />
+        <PictureComponent
+          class="pic"
+          picture={require("../images/buildings/building1.jpeg")}
+        />
+        <PictureComponent
+          class="pic"
+          picture={require("../images/dogs/dog1.jpeg")}
+        />
+        <PictureComponent
+          class="pic"
+          picture={require("../images/food/food1.jpeg")}
+        />
+        <PictureComponent
+          class="pic"
+          picture={require("../images/people/people1.jpg")}
+        />
+        <PictureComponent
+          class="pic"
+          picture={require("../images/scenery/scenery1.jpeg")}
+        />
       </div>
     )
   }
