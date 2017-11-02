@@ -1,6 +1,8 @@
 import React from 'react';
 import { Router, browserHistory, Route, IndexRoute } from 'react-router';
 import SlideshowContainer from './containers/SlideshowContainer'
+import PicturesContainer from './containers/PicturesContainer'
+import IconsContainer from "./containers/IconsContainer"
 
 const App = props => {
   return(
@@ -8,15 +10,7 @@ const App = props => {
       <div className="photoScroll">
         <SlideshowContainer />
       </div>
-      <div className="icon-list">
-        <i className="flaticon-black icon cat"></i>
-        <i className="flaticon-animals icon dog"></i>
-        <i className="flaticon-dove icon bird"></i>
-        <i className="flaticon-users-group icon people"></i>
-        <i className="flaticon-drink icon food"></i>
-        <i className="flaticon-mountain icon scenery"></i>
-        <i className="flaticon-city icon buliding"></i>
-      </div>
+      <IconsContainer />
     </div>
   )
 }
