@@ -7,9 +7,7 @@ import IconsContainer from "./containers/IconsContainer"
 const App = props => {
   return(
     <div>
-      <div className="photoScroll">
-        <SlideshowContainer />
-      </div>
+      <SlideshowContainer />
       <IconsContainer />
     </div>
   )

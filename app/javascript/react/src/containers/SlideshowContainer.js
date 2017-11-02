@@ -19,7 +19,7 @@ class SlideshowContainer extends React.Component {
     ]
     var displayedSlide = slideshowImages[Math.floor(Math.random()*slideshowImages.length)]
     return(
-      <div id="container">
+      <div id="container" className="photoScroll">
          <PictureComponent
            class="pic"
            picture={displayedSlide}
