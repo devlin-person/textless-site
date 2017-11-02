@@ -1,6 +1,7 @@
 .photoScroll {
   border: 1px solid grey;
   padding: 15px;
+  text-align: center;
 }
 
 img {
@@ -11,4 +12,6 @@ img {
 
 .pic {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
