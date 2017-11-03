@@ -4,6 +4,5 @@ class Picture < ApplicationRecord
   has_many :categories, through: :picture_categories
 
   validates :name, presence: true
-  validates :picture_path, presence: true
-  validates :user_id, presence: true
+
 end
