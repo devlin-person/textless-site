@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 20171029193906) do
 
   create_table "pictures", force: :cascade do |t|
     t.string "name", null: false
-    t.string "picture_path", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

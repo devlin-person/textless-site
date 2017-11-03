@@ -1,0 +1,10 @@
+<h1>All Pictures</h1>
+
+<table>
+  <% @pictures.each do |picture| %>
+    <tr>
+      <td><%= picture.name %></td>
+      <td><%= link_to 'Show', picture_path(picture) %></td>
+    </tr>
+  <% end %>
+</table>

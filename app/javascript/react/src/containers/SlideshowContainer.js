@@ -4,15 +4,7 @@ import PictureComponent from "../components/PictureComponent"
 class SlideshowContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      bird_collection: {},
-      building_collection: {},
-      cat_collection: {},
-      dog_collection: {},
-      food_collection: {},
-      people_collection: {},
-      scenery_collection: {}
-    }
+    this.state = {}
   }
 
   render() {
@@ -26,9 +18,8 @@ class SlideshowContainer extends React.Component {
       require("../images/scenery/scenery1.jpg"),
     ]
     var displayedSlide = slideshowImages[Math.floor(Math.random()*slideshowImages.length)]
-    debugger;
     return(
-      <div id="container">
+      <div id="container" className="photoScroll">
          <PictureComponent
            class="pic"
            picture={displayedSlide}

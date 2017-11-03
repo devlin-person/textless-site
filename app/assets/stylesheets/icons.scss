@@ -1,19 +1,21 @@
 .icon-list {
   text-align: center;
-  background: #969fad;
+  background-color: transparentize(#969fad, 0.3);
   position: fixed;
   bottom: 0;
   width: 100%;
-  border: 5px solid #969fad;
-  padding-top: 10px
+  padding: 5px solid #969fad;
+  padding-top: 10px;
+  border-top: 2px solid silver;
 }
 
 .icon {
   border: 2px solid #0099ff;
   border-radius: 50px;
   margin: 0 20px;
-  height: 100px;
-  width: 100px;
+  max-height: 20%;
+  max-width: 20%;
+  padding: 11px;
   background: #b3e0ff;
   text-align: center;
   display: inline-flex;

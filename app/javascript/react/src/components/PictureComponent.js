@@ -2,9 +2,7 @@ import React from 'react';
 
 const PictureComponent = props => {
   return(
-    <div className={props.class}>
-      <img src={props.picture} />
-    </div>
+    <img className={props.class} src={props.picture} />
   );
 };
 

@@ -2,12 +2,15 @@
   border: 1px solid grey;
   padding: 15px;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin: 2% auto;
 }
 
 img {
-  width: 850px;
-  overflow: hidden;
-  text-align: center;
+  width: 70%;
+  padding: 3px;
+  border: 1px solid silver;
 }
 
 .pic {
