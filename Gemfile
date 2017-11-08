@@ -32,7 +32,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'foundation-rails'
-gem 'devise'
 gem 'webpacker'
 
 group :development, :test do
