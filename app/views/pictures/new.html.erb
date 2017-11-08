@@ -1,12 +1,34 @@
 <h1>New Picture</h1>
+ <%= form_for @picture do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name%>
+  </div></br>
 
-<%= form_with scope: :picture, url: pictures_path,local: true do |form| %>
-  <p>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
-  </p>
+  <div class="category_checkboxes">
+    <label for="catgory_cat" class="flaticon-black" />
+    <%= check_box_tag(:category_cat) %> &nbsp; &nbsp; &nbsp;
 
-  <p>
-    <%= form.submit %>
-  </p>
+    <label for="category_bird" class="flaticon-dove" />
+    <%= check_box_tag(:category_bird) %> &nbsp; &nbsp; &nbsp;
+
+    <label for="category_dog" class="flaticon-animals" />
+    <%= check_box_tag(:category_dog) %> &nbsp; &nbsp; &nbsp;
+
+    <label for="category_people" class="flaticon-users-group" />
+    <%= check_box_tag(:people) %> &nbsp; &nbsp; &nbsp;
+
+    <label for="category_food" class="flaticon-drink" />
+    <%= check_box_tag(:category_food) %> &nbsp; &nbsp; &nbsp;
+
+    <label for="category_buildings" class="flaticon-city" />
+    <%= check_box_tag(:category_building) %> &nbsp; &nbsp; &nbsp;
+
+    <label for="category_scenery" class="flaticon-mountain" />
+    <%= check_box_tag(:category_scenery) %>
+  </div></br>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
