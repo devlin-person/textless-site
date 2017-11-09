@@ -1,19 +1,18 @@
-<h1>New Picture</h1>
- <%= form_for @picture do |f| %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name%>
-  </div></br>
+<%= form_for @picture do |f| %>
+<div class="field">
+  <%= f.label :name %><br />
+  <%= f.text_field :name%>
+</div></br>
 
-  <% Category.all.each do |category| %>
-     <label class="<%= "#{category.icon_class}"%>">
-        <%= check_box_tag "picture[category_ids][]", category.id, f.object.categories.include?(category) %>
-     </label> &nbsp &nbsp &nbsp
-  <% end %>
+<% Category.all.each do |category| %>
+   <label class="<%= "#{category.icon_class}"%>">
+      <%= check_box_tag "picture[category_ids][]", category.id, f.object.categories.include?(category) %>
+   </label> &nbsp &nbsp &nbsp
+<% end %>
 
-  </div>
+</div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class="actions">
+  <%= f.submit %>
+</div>
 <% end %>
