@@ -17,10 +17,9 @@ ActiveRecord::Schema.define(version: 20171021204119) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name", null: false
-    t.bigint "picture_category_id"
+    t.string "icon_class"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["picture_category_id"], name: "index_categories_on_picture_category_id"
   end
 
   create_table "picture_categories", force: :cascade do |t|
@@ -34,10 +33,8 @@ ActiveRecord::Schema.define(version: 20171021204119) do
 
   create_table "pictures", force: :cascade do |t|
     t.string "name", null: false
-    t.bigint "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_pictures_on_category_id"
   end
 
   create_table "users", force: :cascade do |t|

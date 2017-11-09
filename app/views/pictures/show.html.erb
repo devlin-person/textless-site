@@ -1,4 +1,12 @@
 <p>
   <strong>Name:</strong>
-  <%= @picture.name %>
+  <%= @picture.name %></br>
+
+  <strong>Category:</strong>
+  <ul>
+    <% @picture.category_ids.each do |category| %>
+      <li><%= category %></li>
+    <% end %>
+  </ul>
+
 </p>

@@ -5,28 +5,13 @@
     <%= f.text_field :name%>
   </div></br>
 
-  <div class="category_checkboxes">
-    <label for="catgory_cat" class="flaticon-black" />
-    <%= check_box_tag(:category_cat) %> &nbsp; &nbsp; &nbsp;
+  <% Category.all.each do |category| %>
+     <label class="<%= "#{category.icon_class}"%>">
+        <%= check_box_tag "picture[category_ids][]", category.id, f.object.categories.include?(category) %>
+     </label> &nbsp &nbsp &nbsp
+  <% end %>
 
-    <label for="category_bird" class="flaticon-dove" />
-    <%= check_box_tag(:category_bird) %> &nbsp; &nbsp; &nbsp;
-
-    <label for="category_dog" class="flaticon-animals" />
-    <%= check_box_tag(:category_dog) %> &nbsp; &nbsp; &nbsp;
-
-    <label for="category_people" class="flaticon-users-group" />
-    <%= check_box_tag(:people) %> &nbsp; &nbsp; &nbsp;
-
-    <label for="category_food" class="flaticon-drink" />
-    <%= check_box_tag(:category_food) %> &nbsp; &nbsp; &nbsp;
-
-    <label for="category_buildings" class="flaticon-city" />
-    <%= check_box_tag(:category_building) %> &nbsp; &nbsp; &nbsp;
-
-    <label for="category_scenery" class="flaticon-mountain" />
-    <%= check_box_tag(:category_scenery) %>
-  </div></br>
+  </div>
 
   <div class="actions">
     <%= f.submit %>
