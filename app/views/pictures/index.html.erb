@@ -3,8 +3,8 @@
 <table>
   <% @pictures.each do |picture| %>
     <tr>
-      <td><%= picture.name %></td>
-      <td><%= link_to 'Show', picture_path(picture) %></td>
+      <td><%= link_to picture.name, picture_path(picture)%></td>
     </tr>
   <% end %>
+
 </table>

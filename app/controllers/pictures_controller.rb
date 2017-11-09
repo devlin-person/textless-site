@@ -4,6 +4,8 @@ class PicturesController < ApplicationController
   end
 
   def new
+    @picture = Picture.new
+    @category_ids = Category.all
   end
 
   def create
@@ -11,15 +13,15 @@ class PicturesController < ApplicationController
 
     @picture.save
     redirect_to @picture
-
   end
 
   def show
     @picture = Picture.find(params[:id])
+    @category = Category.find(params[:id])
   end
 
   private
   def picture_params
-    params.require(:picture).permit(:name)
+    params.require(:picture).permit(:name, category_ids: [])
   end
 end

@@ -10,7 +10,6 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
-rails generate devise:install && rails generate devise:views
 
 * Database creation
 
