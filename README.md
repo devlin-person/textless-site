@@ -1,27 +1,22 @@
-# README
+This app is a picture-sharing site devoid of text and navigated entirely by pictures and icons in order to maximize accessible to people who don't speak English, children, and people with disabilities. A user is able to submit and tag their pictures via icons and then use those icon tags in order to search for pictures of that category.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Future features will include a drag and drop field to upload files, a slide show on the front page with a random selection of one picture from each category, and an external API linking to Imgur. 
 
-Things you may want to cover:
 
-* Ruby version: 2.3.3
+https://fotou.herokuapp.com/
 
-* System dependencies
+Ruby version: 2.3.3
 
-* Configuration
+Test suites: Rspec
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite: rspec
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Running the app:
+* bundle install
+* nvm install 6
+* rake db:create
+* rake db:migrate
+* rake db:seed
+* rails s
+*  ./bin/webpack-dev-server
 
 Pictures seeded from www.pexels.com
 

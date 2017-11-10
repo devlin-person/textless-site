@@ -1,12 +1,13 @@
-<p>
-  <strong>Name:</strong>
-  <%= @picture.name %></br>
+<div>
+  <div><%= @picture.name %><div></br>
 
-  <strong>Category:</strong>
-  <ul>
-    <% @picture.category_ids.each do |category| %>
-      <li><%= category %></li>
+  <div class="categories_box">
+    <% @picture.category_ids.each do |category_id| %>
+      <% Category.all.each do |category| %>
+        <% if category.id == category_id %>
+          <i class="<%= "#{category.icon_class}"%>"></i>
+        <% end %>
+      <% end %>
     <% end %>
-  </ul>
-
-</p>
+  </div>
+</div>
