@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const IconComponent = props => {
   return(
-      <i className={props.class} />
+      <Link to={props.pic_link} className={props.class}></Link>
   );
 };
 
