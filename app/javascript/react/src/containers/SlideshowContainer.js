@@ -17,11 +17,11 @@ class SlideshowContainer extends React.Component {
       require("../images/people/people1.jpg"),
       require("../images/scenery/scenery1.jpg"),
     ]
-    
+
     var displayedSlide = slideshowImages[Math.floor(Math.random()*slideshowImages.length)]
 
     return(
-      <div id="container" className="photoScroll">
+      <div className="container photoScroll">
          <PictureComponent
            class="pic"
            picture={displayedSlide}

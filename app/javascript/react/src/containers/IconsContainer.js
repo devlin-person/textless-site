@@ -22,37 +22,38 @@ class IconsContainer extends React.Component {
         <IconComponent
           class="flaticon-black icon cat"
           // displayPicture={cat_display}
-          pic_link="/"
+          pic_link="/cat_photo"
         />
         <IconComponent
           class="flaticon-animals icon dog"
           // displayPicture={dog_display}
-          pic_link="/"
+          pic_link="/dog_photo"
         />
         <IconComponent
           class="flaticon-dove icon bird"
           // displayPicture={bird_display}
-          pic_link="/"
+          pic_link="/bird_photo"
         />
         <IconComponent
           class="flaticon-users-group icon people"
           // displayPicture={people_display}
-          pic_link="/"
+          pic_link="/people_photo"
         />
         <IconComponent
           class="flaticon-drink icon food"
           // displayPicture={food_display}
-          pic_link="/"
+          pic_link="/food_photo"
+          test="this"
         />
         <IconComponent
           class="flaticon-mountain icon scenery"
           // displayPicture={scenery_display}
-          pic_link="/"
+          pic_link="/scenery_photo"
         />
         <IconComponent
           class="flaticon-city icon buliding"
           // displayPicture={building_display}
-          pic_link="/"
+          pic_link="/building_photo"
         />
       </div>
     )

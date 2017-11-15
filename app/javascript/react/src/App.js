@@ -10,6 +10,13 @@ const App = props => {
       <Route path="/" >
         <IndexRoute component={WelcomeContainer} />
         <Route path="/photo_display" component={PhotoDisplayComponent} />
+        <Route path="/bird_photo" component={PhotoDisplayComponent} />
+        <Route path="/building_photo" component={PhotoDisplayComponent} />
+        <Route path="/cat_photo" component={PhotoDisplayComponent} />
+        <Route path="/dog_photo" component={PhotoDisplayComponent} />
+        <Route path="/food_photo" component={PhotoDisplayComponent} />
+        <Route path="/people_photo" component={PhotoDisplayComponent} />
+        <Route path="/scenery_photo" component={PhotoDisplayComponent} />
       </Route>
     </Router>
 
