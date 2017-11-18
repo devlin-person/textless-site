@@ -1,6 +1,5 @@
 import React from "react";
-import PictureComponent from "../components/PictureComponent"
-'./containers/WelcomeContainer'
+
 import IconsContainer from "./IconsContainer"
 import SlideshowContainer from './SlideshowContainer'
 
