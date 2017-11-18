@@ -1,10 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const IconComponent = props => {
-  return(
-      <Link to={props.pic_link} className={props.class}></Link>
-  );
-};
+class IconComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      test: this.props.test
+    }
+  }
+
+  render() {
+    let test = this.state.test
+
+    return(
+      <Link to="/photo_display" className={this.props.class}></Link>
+    )
+  }
+}
 
 export default IconComponent;
